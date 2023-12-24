@@ -24,7 +24,13 @@ func main() {
 		var depositAmount float64
 		fmt.Scan(&depositAmount)
 		accountBalance += +depositAmount
-		fmt.Printf("Balance updated! New amount: %0.1f\n", accountBalance)
+		fmt.Printf("Balance updated! New amount: %0.2f\n", accountBalance)
+	} else if choice == 3 {
+		fmt.Print("Withdrawal amount: ")
+		var withdrawAmount float64
+		fmt.Scan(&withdrawAmount)
+		accountBalance -= withdrawAmount
+		fmt.Printf("Balance updated! New amount: %0.2f\n", accountBalance)
 	}
 
 	fmt.Printf("Your choice: %v\n", choice)
