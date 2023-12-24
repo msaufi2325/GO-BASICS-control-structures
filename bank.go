@@ -100,5 +100,3 @@ func main() {
 
 	}
 }
-
-// testing coding from UDK-054
